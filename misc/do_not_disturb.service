@@ -1,0 +1,11 @@
+[Unit]
+Description=Do Not Disturb by BT Shutter
+
+[Service]
+Type=simple
+User=haccht
+WorkingDirectory=/home/haccht/do_not_disturb
+ExecStart=/home/haccht/do_not_disturb/.venv/bin/python /home/haccht/do_not_disturb/shutter.py
+
+[Install]
+WantedBy=default.target
